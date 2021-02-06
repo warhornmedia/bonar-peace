@@ -1,0 +1,205 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={God's Way of Peace},
+  pdfauthor={Horatius Bonar},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% DEFINE PHYSICAL DOCUMENT SETTINGS HD
+% media settings
+\usepackage[paperwidth=5.5in, paperheight=8.5in]{geometry}
+
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+
+\usepackage{titling}
+\usepackage{pdfpages}
+\IfFileExists{./cover.pdf}{
+  \newcommand{\myCover}{./cover.pdf}}
+  {\IfFileExists{./cover.jpg}{
+    \newcommand{\myCover}{./cover.jpg}}
+    {\IfFileExists{./cover.png}{
+      \newcommand{\myCover}{./cover.png}}{}
+    }
+  }
+\@ifundefined{myCover}
+{}
+{
+\pretitle{\begin{center}\includepdf{\myCover}}
+\posttitle{\end{center}\setcounter{page}{0}}
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+}
+\clearpage\pagenumbering{roman}
+
+\newenvironment{poetry}[0]{\par\leftskip=2em\rightskip=2em}{\par\medskip}
+
+\setmainfont{Calluna}
+\newfontfamily\greekfont[Script=Greek]{LiberationSerif}
+
+\makeatother
+
+\frontmatter
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{God's Way of Peace}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{A book for the anxious}
+\author{Horatius Bonar}
+\date{1861}
+
+\begin{document}
+\maketitle
+
+\mainmatter
+\pagenumbering{roman}
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{about-this-book}{%
+\chapter*{About this book}\label{about-this-book}}
+\addcontentsline{toc}{chapter}{About this book}
+
+Republished by \href{https://classics.warhornmedia.com/}{Warhorn Classics}---making classic Christian content available online for \textsc{free} in high quality, readable formats.
+
+The latest version of this book can always be found \href{https://warhornmedia.github.io/bonar-peace/}{here} in many electronic formats for your reading convenience on any device.
+
+\hypertarget{downloads}{%
+\subsubsection*{Downloads}\label{downloads}}
+\addcontentsline{toc}{subsubsection}{Downloads}
+
+\href{https://warhornmedia.github.io/bonar-peace//Bonar-Peace.pdf}{Download PDF}
+
+\href{https://warhornmedia.github.io/bonar-peace//Bonar-Peace.epub}{Download ePub}
+
+\hypertarget{original}{%
+\subsubsection*{Original}\label{original}}
+\addcontentsline{toc}{subsubsection}{Original}
+
+Scanned images of the original printing of this book are available \href{https://archive.org/details/godswayofpeacebo00bona/page/n5/mode/2up}{here}.
+
+\hypertarget{support-warhorn-classics}{%
+\subsubsection*{Support Warhorn Classics}\label{support-warhorn-classics}}
+\addcontentsline{toc}{subsubsection}{Support Warhorn Classics}
+
+We hope this book is a blessing to you. If it is, please \href{https://warhornmedia.com/give}{make a one-time or recurring contribution} right now, sponsor a book from our upcoming list, or volunteer your proofreading or technical skills to help produce more content. Contact \href{mailto:lucas@beggarsborn.com}{Lucas Weeks} to get involved.
+
+\clearpage
+\setcounter{page}{1}\pagenumbering{arabic}
+
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+There seem to be many, in our day, who are seeking God. Yet they appear to be but ``feeling after him in order to find him.'' as if he were either a distant or an ``unknown God.'' They forget that ``he is NOT FAR from every one of us,'' (Acts xvii. 27); for " in him we live, and move, and have our being.''
+
+To know that He is not far; that he has come down; that he has come nigh; this is the ``beginning of the gospel.'' It gives direct denial to the vain thoughts of those who think that they must bring Him nigh by their prayers and devout performances. He has shewn himself to us, that we may know liim, and in knowing him find tHe life of our souls.
+
+With some, who name the name of Christ, religion is a very unfinished thing. It is by no means satisfactory either to the man himself, or to the onlookers. There is much awanting. The man is anxious and earnest, but if he has not ``peace with God,'' he has not what God calls " religion.
+
+Acceptance with God lies at the foundation of all rehgion ; for there must be an accepted worshipper, before there can be acceptable worship. Religion is with many merely the means of averting God's displeasure, and securing his favour. It is often irksome, but they do not feel easy in neglecting it; and they hope that by it they will obtain forgiveness before they die.
+
+This, however, is the inversion of God's order, and is in reality the worship of an\ldots{}
+
+\hypertarget{gods-testimony-concerning-man}{%
+\chapter{God's Testimony Concerning Man}\label{gods-testimony-concerning-man}}
+
+God knows us. He knows what we are; he knows also what he meant us to be; and upon the difference between these two states he founds his testimony concerning us.
+
+He is too loving to say anything needlessly severe; too true to say anything untrue; nor can he have any motive to misrepresent us; for he loves to tell of the good, not of the evil, that may be found in any of the works of his hands. He declares, them ``good'', ``very good'', at first; and if he does not do so now, it is not because he would not, but because he cannot; for ``all flesh has corrupted its way upon the earth.''
+
+God's testimony concerning man is, that he is a sinner. He bears witness against him, not for him, and testifies that ``there is none righteous, no, not one;'' that there is ``none that doeth good;'' none ``that understandeth;'' none that even seeketh after God, and still more none that loveth him. God speaks of man kindly, but severely; as one yearning over a lost child, yet as one who will make no terms with sin, and will ``by no means clear the guilty.'' He declares man to be a lost one, a stray one, a rebel, nay a ``hater of God;'' not a sinner occasionally, but a sinner always; not a sinner in part, with many good things about him; but wholly a sinner, with no compensating goodness; evil in heart as well as life, ``dead in trespasses and sins;'' an evil doer, and therefore under condemnation; an enemy of God, and therefore ``under wrath;'' a breaker of the righteous law, and therefore under ``the curse of the law.''
+
+Man has fallen! Not this man or that man, but the whole race. In Adam all have sinned; in Adam all have died. It is not that a few leaves have faded or been shaken down, but the tree has become corrupt, root and branch. The ``flesh,'' or ``old man'' -- that is, each man as he is born into the world, a son of man, a fragment of humanity, a unit in Adam's fallen body, -- is ``corrupt.'' He not merely brings forth sin, but he carries it about with him, as his second self; nay, he is a ``body'' or mass of sin, a ``body of death,'' subject not to the law of God, but to ``the law of sin.'' The Jew, educated under the most perfect of laws, and in the most favorable circumstances, was the best type of humanity, -- of civilized, polished, educated humanity; the best specimen of the first Adam's sons; yet God's testimony concerning him is that he is ``under sin,'' that he has gone astray, and that he has ``come short of the glory of God.''
+
+The outer life of a man is not the man, just as the paint on a piece of timber is not the timber, and as the green moss upon the hard rock is not the rock itself. The picture of a man is not the man; it is but a skillful arrangement of colors which look like the man. The man that loves God with all his heart is in a right state; the man that does not love him thus is in a wrong one. He is a sinner; because his heart is not right with God. He may think his life a good one, and others may think the same; but God counts him guilty, worthy of death and hell. The outward good cannot make up for the inward evil. The good deeds done to his fellow man cannot be set off against his bad thoughts of God. And he must be full of these bad thoughts so long as he does not love this infinitely lovable and infinitely glorious Being with all his strength.
+
+God's testimony then concerning man is, that he does not love God with all his heart; nay, that he does not love him at all. Not to love our neighbor is sin; not to love a parent is greater sin; but not to love God, our divine parent, is greater sin still.
+
+Man need not try to say a good word for himself, or to plead ``not guilty,'' unless he can show that he loves, and has always loved God with his whole heart and soul. If he can truly say this, he is all right, he is not a sinner, and does not need pardon. He will find his way to the kingdom without the cross and without a Saviour. But, if he cannot say this, ``his mouth is stopped,'' and he is ``guilty before God.'' However favorably a good outward life may dispose himself and others to look upon his case just now, the verdict will go against him hereafter. This is man's day, when man's judgments prevail; but God's day is coming, when the case shall be strictly tried upon its real merits. Then the Judge of all the earth shall do right, and the sinner be put to shame.
+
+There is another and yet worse charge against him. He does not believe on the name of the Son of God, nor love the Christ of God. This is his sin of sins. That his heart is not right with God is the first charge against him. That his heart is not right with the Son of God is the second. And it is this second that is the crowning crushing sin, carrying with it more terrible damnation than all other sins together. ``He that believeth not is condemned already; because he he hath not believed in the name of the only begotten Son of God.'' ``He that believeth not God, hath made him a liar; because he believeth not the record which God gave of his Son.'' ``He that believeth not shall be damned.'' Hence it was that the apostles preached ``repentance toward God, and faith toward our Lord Jesus Christ.'' And hence it is that the first sin which the Holy Spirit brings home to a man is unbelief; ``when he is come he will reprove the world of sin, because they believe not on me.''
+
+Such is God's condemnation of man. Of this the whole Bible is full. That great love of God which his word reveals is based on this condemnation. It is love to the condemned. God's testimony to his own grace has no meaning, save as resting on or taking for granted his testimony to man's guilt and ruin. Nor is it against man as merely a being morally diseased or sadly unfortunate that he testifies; but as guilty of death, under wrath, sentenced to the eternal curse; for that crime of crimes, a heart not right with God, and not true to his Incarnate Son.
+
+This is a divine verdict, not a human one. It is God, not man, who condemns, and God is not a man that he should lie. This is God's testimony concerning man, and we know that this witness is true.
+
+\end{document}
