@@ -1,10 +1,13 @@
-# Book Template
+# God's Way of Peace
+## A Book for the Anxious
+
+### by Horatius Bonar
 
 ## Warhorn Classics
 
-## 2020
+## 1861
 
-This book is a template for starting new Warhorn Classics book projects. It also contains some brief instructions for how to get started.
+"To him that worketh not, but believeth." —Romans 4:5
 
 Available for your reading pleasure here:
-https://warhornmedia.github.io/warhorn-classics-book-template
+https://warhornmedia.github.io/bonar-peace

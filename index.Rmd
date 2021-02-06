@@ -1,13 +1,14 @@
 --- 
-title: "Book Template"
-author: "Warhorn Classics"
-date: "2020"
-description: "This book is a template for starting new Warhorn Classics book projects. It also contains some brief instructions for how to get started."
+title: "God's Way of Peace"
+subtitle: "A book for the anxious"
+author: "Horatius Bonar"
+date: "1861"
+description: "'To him that worketh not, but believeth.' —Romans 4:5"
 params:
-  scans: ""
+  scans: "https://archive.org/details/godswayofpeacebo00bona/page/n5/mode/2up"
   build: "1"
 cover-image: "cover.jpg"
-url: "https://warhornmedia.github.io/warhorn-classics-book-template/"
+url: "https://warhornmedia.github.io/bonar-peace/"
 output: 
   bookdown::gitbook:
     config:
@@ -15,10 +16,10 @@ output:
         scroll_highlight: yes
         before: |
           <li><a href="https://www.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
-          <li><a href="./">Book Template — Warhorn Classics</a></li>
+          <li><a href="./">God's Way of Peace — Horatius Bonar</a></li>
         after: |
           <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-      edit: https://github.com/warhornmedia/warhorn-classics-book-template/edit/master/%s
+      edit: https://github.com/warhornmedia/bonar-peace/edit/master/%s
 documentclass: book
 always_allow_html: yes
 site: bookdown::bookdown_site
