@@ -1,9 +1,9 @@
 --- 
-title: "God's Way of Peace"
-subtitle: "A book for the anxious"
+title: "God’s Way of Peace"
+subtitle: "A Book for the Anxious"
 author: "Horatius Bonar"
 date: "1861"
-description: "'To him that worketh not, but believeth.' —Romans 4:5"
+description: "“To him that worketh not, but believeth.” —Romans 4:5"
 params:
   scans: "https://archive.org/details/godswayofpeacebo00bona/page/n5/mode/2up"
   build: "1"
@@ -16,7 +16,7 @@ output:
         scroll_highlight: yes
         before: |
           <li><a href="https://www.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
-          <li><a href="./">God's Way of Peace — Horatius Bonar</a></li>
+          <li><a href="./">God’s Way of Peace — Horatius Bonar</a></li>
         after: |
           <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
       edit: https://github.com/warhornmedia/bonar-peace/edit/master/%s
