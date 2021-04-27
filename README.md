@@ -1,3 +1,6 @@
+![example workflow](https://github.com/warhornmedia/bonar-peace/actions/workflows/deploy_bookdown.yml/badge.svg)
+
+
 # God's Way of Peace
 ## A Book for the Anxious
 
