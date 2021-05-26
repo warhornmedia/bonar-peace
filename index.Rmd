@@ -5,6 +5,7 @@ author: "Horatius Bonar"
 date: "1861"
 description: "“To him that worketh not, but believeth.” —Romans 4:5"
 params:
+  pubinfo: "Originally published as “This Is An Empty Book” in *Warhorn Classics Anthology* (Bayly, McNeilly, Weeks, et al, 2020), 219–283."
   scans: "https://archive.org/details/godswayofpeacebo00bona/page/n5/mode/2up"
   build: "1"
 cover-image: "cover.jpg"
@@ -15,10 +16,9 @@ output:
       toc:
         scroll_highlight: yes
         before: |
-          <li><a href="https://www.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
+          <li><a href="https://classics.warhornmedia.com/"><img src="classics-template-files/images/warhornlogo.png" width="260"></a></li>
           <li><a href="./">God’s Way of Peace — Horatius Bonar</a></li>
         after: |
-          <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
       edit: https://github.com/warhornmedia/bonar-peace/edit/master/%s
 documentclass: book
 always_allow_html: yes
