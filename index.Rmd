@@ -5,7 +5,7 @@ author: "Horatius Bonar"
 date: "1861"
 description: "“To him that worketh not, but believeth.” —Romans 4:5"
 params:
-  pubinfo: "Originally published as “This Is An Empty Book” in *Warhorn Classics Anthology* (Bayly, McNeilly, Weeks, et al, 2020), 219–283."
+  pubinfo: "The text for this edition originally published as *God’s Way of Peace: A Book for the Anxious* (New York: Robert Carter & Brothers, 1870). There were various editions of this work printed during and after Bonar's lifetime. Generally, we choose source texts which were published as late as possible *within the author's lifetime*, and which appear to have been widely distributed while the author was still alive."
   scans: "https://archive.org/details/godswayofpeacebo00bona/page/n5/mode/2up"
   build: "1"
 cover-image: "cover.jpg"
